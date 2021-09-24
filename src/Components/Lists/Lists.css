@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+    justify-content: space-between;
+}
+.search-fields{
+  display: flex;
+  flex-direction: column;
+}
+.right{
+  flex: 0 0 50%;
+  max-width: 295px;
+  width: 100%;
+}
+.left{
+  flex: 0 0 50%;
+}
+.ticks{
+  border: 2px solid grey;
+  border-radius: 8px;
+}
+input{
+  border-radius: 9px;
+  padding: 0.7rem 0.9rem;
+  margin-top: 18px;
+}

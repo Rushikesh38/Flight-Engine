@@ -1,0 +1,77 @@
+/* INSTRUCTIONS
+ *
+ * 1) Limit the total width of
+ *    the .intro-conent to about half
+ *    of it's parent
+ *
+ * 2) Stop the text from overflowing
+ *    out the bottom at small screen
+ *    widths
+ *
+ * You may modify the HTML if needed
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navbar */
+.nav{
+  display: flex;
+}
+.navbar ul{
+  
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navbar ul li{
+ padding: 2rem 0.5rem;
+}
+.main{
+  display: flex;
+  /* border: 1px solid rgb(110, 110, 133); */
+  justify-content: center;
+  text-align: center;
+
+}
+.container{
+box-shadow: cornsilk;
+  background-color: rgb(220, 220, 228);
+  width: max(200px, 40%);
+  text-align: center;
+
+}
+
+.SubjectMarks{
+  display: flex;
+}
+.SubjectMarks .RightSide{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
+.SubjectMarks .LeftSide{
+  justify-content:center;
+  text-align: center;
+  display: flex;
+  flex: 50%;
+ }
+ .SubjectMarks >*{
+   flex-basis: 100%;
+ }
+  .cards{
+    margin: 2rem 0;
+  }
+ 
