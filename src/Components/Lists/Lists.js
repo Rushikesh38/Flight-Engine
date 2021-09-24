@@ -6,22 +6,30 @@ const Lists = ({ ticks }) => {
   const [destination, setDestination] = useState('');
   const [departDate, setDepartureDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
+  const [prices, setPrice] = useState('');
   return (
     <>
       <div className="container">
+
         <div className="right">
           <form className="search-fields">
-            <input type="text" placeholder="Enter originecity" onChange={(event) => { setSearch(event.target.value) }} />
-            <input type="text" placeholder="Enter destinationcity" onChange={(event) => { setDestination(event.target.value) }} />
+
+            Origin City <input type="text" placeholder="Enter originecity" onChange={(event) => { setSearch(event.target.value) }} />
+            Destination City  <input type="text" placeholder="Enter destinationcity" onChange={(event) => { setDestination(event.target.value) }} />
+            Departure Date
             <input type="date" placeholder="Departure Date" onChange={(event) => { setDepartureDate(event.target.value) }} />
+            Return Date
             <input type="date" placeholder="Return  Date" onChange={(event) => { setReturnDate(event.target.value) }} />
+
           </form>
         </div>
 
 
         <div className="left">
+          {departDate}
+          {returnDate}
           {ticks.filter((val) => {
-            if (search == "") {
+            if (search === "") {
               return val
             }
             if (val.originCity.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
@@ -30,14 +38,15 @@ const Lists = ({ ticks }) => {
             if (val.destinationCity.toLocaleLowerCase().includes(destination.toLocaleLowerCase())) {
               return val
             }
+
             if (val.departureDate.includes(departDate.toLocaleLowerCase())) {
 
               return val
             }
             if (val.returnDate.includes(returnDate.toLocaleLowerCase())) {
-
               return val
             }
+
           }).map((item) => {
             return (
               <main className="ticks">

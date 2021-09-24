@@ -11,7 +11,7 @@ export default [
     flightNumber: 'Al 202'
   },
   {
-    id: 0,
+    id: 1,
     price: 3500,
     originCity: 'pune',
     originCityCode: 'PNQ',
@@ -22,7 +22,7 @@ export default [
     flightNumber: 'Al 202'
   },
   {
-    id: 1,
+    id: 2,
     price: 5000,
     originCity: 'Delhi',
     originCityCode: 'PNQ',
@@ -44,7 +44,7 @@ export default [
     flightNumber: 'Al 202'
   },
   {
-    id: 3,
+    id: 4,
     price: 4500,
     originCity: 'Bengaluru',
     originCityCode: 'BLR',

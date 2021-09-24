@@ -1,10 +1,14 @@
 .container{
   display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
 }
 .search-fields{
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 9px;
+  border: 2px solid grey;
 }
 .right{
   flex: 0 0 50%;
@@ -22,4 +26,18 @@ input{
   border-radius: 9px;
   padding: 0.7rem 0.9rem;
   margin-top: 18px;
+}
+
+@media only screen and (max-width:768px){
+.right{
+  flex: 0 0 100%;
+  margin: 0 auto;
+}
+.left{
+  flex: 0 0 100%;
+}
+.search-fields{
+  width: 100%;  
+
+}
 }
