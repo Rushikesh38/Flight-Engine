@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Lists from './Lists/Lists';
-
-import './App.css'
 import data from './Data/data';
+import './App.css'
+
 const App = () => {
+  // state to hold the data
   const [ticks, setTicks] = useState(data);
   return (
     <>

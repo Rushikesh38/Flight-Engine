@@ -25,11 +25,6 @@ const List = ({ id, price, originCity, originCityCode, destinationCity, destinat
               <button className="btx">Book this flight</button>
             </div>
           </div>
-          {/* <img src={Logo} className="image" />
-          <div className="btn">
-            <button>Book this flight</button>
-          </div> */}
-
         </div>
       </div>
     </>

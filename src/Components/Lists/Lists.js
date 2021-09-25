@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import List from "../List/List";
 import './Lists.css'
 const Lists = ({ ticks }) => {
+
+  // different states to hold the data of user input 
   const [search, setSearch] = useState('');
   const [destination, setDestination] = useState('');
   const [departDate, setDepartureDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
-  const [prices, setPrice] = useState('');
   return (
     <>
       <div className="container">
 
         <div className="right">
-          <form className="search-fields">
+          {/* form to search the data */}
 
+          <form className="search-fields">
             Origin City <input type="text" placeholder="Enter originecity" onChange={(event) => { setSearch(event.target.value) }} />
             Destination City  <input type="text" placeholder="Enter destinationcity" onChange={(event) => { setDestination(event.target.value) }} />
             Departure Date
@@ -26,8 +28,6 @@ const Lists = ({ ticks }) => {
 
 
         <div className="left">
-          {/* <p> Derture: {departDate}</p>
-          <p> Return: {returnDate}</p> */}
           {ticks.filter((val) => {
             if (search === "") {
               return val
@@ -46,7 +46,6 @@ const Lists = ({ ticks }) => {
             if (val.returnDate.includes(returnDate.toLocaleLowerCase())) {
               return val
             }
-
           }).map((item) => {
             return (
               <main className="ticks">
@@ -55,10 +54,6 @@ const Lists = ({ ticks }) => {
             )
           })}
         </div>
-
-
-
-
       </div>
     </>
   )
