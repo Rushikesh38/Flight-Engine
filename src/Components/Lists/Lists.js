@@ -26,8 +26,8 @@ const Lists = ({ ticks }) => {
 
 
         <div className="left">
-          {departDate}
-          {returnDate}
+          {/* <p> Derture: {departDate}</p>
+          <p> Return: {returnDate}</p> */}
           {ticks.filter((val) => {
             if (search === "") {
               return val

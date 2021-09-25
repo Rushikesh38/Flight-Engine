@@ -7,7 +7,7 @@ const List = ({ id, price, originCity, originCityCode, destinationCity, destinat
       <div key={id} className="Tickets">
         <div className="price">
           <div>
-            <h1> Rs.{price}</h1>
+            <h1 className="price-h"> Rs.{price}</h1>
             <p> {flightNumber} </p>
           </div>
           <div className="info">

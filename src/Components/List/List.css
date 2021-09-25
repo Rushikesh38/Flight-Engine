@@ -24,3 +24,21 @@
 .btx{
   border-radius: 9px;
 }
+@media only screen and (max-width:418px){
+  .info{
+    font-size: 4vh;
+  }
+  .price-h{
+    font-size: 10vh;
+  }
+  .image{
+    width: 72%;
+  }
+  .btx{
+    font-size: 4vh;
+    
+  }
+  .btn{
+    margin-top: 3px;
+  }
+}
