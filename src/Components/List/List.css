@@ -26,16 +26,16 @@
 }
 @media only screen and (max-width:418px){
   .info{
-    font-size: 4vh;
+    font-size: 2vh;
   }
   .price-h{
-    font-size: 10vh;
+    font-size: 4vh;
   }
   .image{
     width: 72%;
   }
   .btx{
-    font-size: 4vh;
+    font-size: 2vh;
  
   }
   .btn{
