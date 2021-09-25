@@ -9,6 +9,7 @@ body{
 .heading{
   background-color: gray;
   padding: 1rem 1rem;
+  text-align: center;
 }
 .main-content{
   margin-top: 50px;
